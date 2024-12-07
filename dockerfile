@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json first to leverage Docker caching
 COPY package*.json ./
 
-# Install dependencies for image
+# Install dependencies for image 
 RUN npm install
 
 # Copy the entire application source code to the working directory
